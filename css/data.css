@@ -1,0 +1,459 @@
+html {
+    font-family:'Inter', sans-serif;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+ 
+.menu {
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: #d8d8d8 2px solid;
+    padding: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: black;
+}
+
+.jobs, .home, .settings {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #838383;
+}
+
+.home:hover,
+.jobs:hover, 
+.data:hover, 
+.settings:hover {
+    color: black;
+}
+
+.home:hover svg {
+    stroke: black;
+}
+
+.jobs:hover svg {
+    stroke: black;
+}
+
+.data:hover svg {
+    stroke: black;
+}
+
+.settings:hover svg {
+    fill: black;
+}
+
+.menu-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white, #F3F0F0);
+}
+
+.upgrade button {
+    background-color: #5F92B8;
+    color: white;
+    padding: 14px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+
+.main {
+    box-sizing: border-box;
+    margin-left: 20%;
+    width: 80%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hello-title {
+    font-size: 30px;
+    font-family: Satoshi-Regular;
+    font-weight: bold;
+    color: black;
+}
+
+.grey-text-2,
+.hello-text {
+    font-size: 16px;
+    color: #636363;
+}
+
+.hello-text {
+    margin-bottom: 20px;
+}
+
+.status-container {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.status-item {
+    width: 33%;
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    border: #d8d8d8 1px solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.status-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.status-title {
+    font-size: 16px;
+    color: black;
+}
+
+.status-info {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.job-data-chart-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.job-data-chart-card {
+    width: 50%;
+    padding: 20px;
+    border: #d8d8d8 1px solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.job-data-chart-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.job-data-chart-title {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5F92B8;
+}
+
+.job-data-chart-text {
+    font-size: 14px;
+    color: #636363;
+    margin-bottom: 44px;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.your-job-header,
+.metrics-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metrics-header img {
+    display: none;
+    cursor: pointer;
+}
+
+.metrics-title-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.your-job-title,
+.metrics-title {
+    font-size: 22px;
+    font-family: Satoshi-Regular;
+    font-weight: bold;
+    color: black;
+}
+
+.metrics-header hr {
+    border: none;
+    border-left: #d8d8d8 1px solid;
+    margin: 0;
+    width: 0;
+    height: 100%;
+}
+
+.metrics-option-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.metrics-category-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.metrics-category {
+    font-size: 14px;
+    color: black;
+    padding: 8px 12px;
+    border: #d8d8d8 1px solid;
+    border-radius: 15px;
+}
+
+.your-job-option,
+.metrics-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: #d8d8d8 1px solid;
+    border-radius: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.data-switch-container,
+.metrics-switch-container {
+    display: none;
+    margin: auto;
+}
+
+.data-switch,
+.metrics-switch {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border: #d8d8d8 1px solid;
+    border-radius: 20px;
+}
+
+.switch-data,
+.switch-metrics {
+    width: 33%;
+    text-align: center;
+    padding-block: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.metrics-percent {
+    font-size: 16px;
+    color: #FC3636;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-right: none;
+        border-top: #d8d8d8 2px solid;
+        padding: 0;
+    }
+    .menu-items {
+        flex-direction: row;
+        justify-content: space-around !important;
+        gap: 5px;
+        padding: 20px;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    .menu-bottom {
+        display: none;
+    }
+    .home, 
+    .jobs,
+    .data,
+    .settings {
+        flex-direction: column;
+        width: 85px;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 100px;
+        padding: 30px;
+        gap: 25px;
+    }
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hello {
+        gap: 4px;
+    }
+    .hello-title {
+        font-size: 25px;
+    }
+    .hello-text {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .status hr {
+        display: none;
+    }
+    .status-container {
+        padding: 0;
+    }
+    .status-container hr {
+        display: none;
+    }
+    .status-container .status-item:last-child {
+        display: none;
+    }
+    .status-item {
+        width: 50%;
+    }
+    .status-item > img {
+        display: none;
+    }
+    .status-content {
+        gap: 8px;
+    }
+    .status-title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #636363;
+    }
+    .status-info {
+        font-size: 18px;
+    }
+    .job-data-chart-container .job-data-chart-card:last-child {
+        display: none;
+    }
+    .job-data-chart-card {
+        width: 100%;
+    }
+    .metrics {
+        gap: 25px;
+    }
+    .metrics-header img {
+        display: block;
+    }
+    .metrics-title-container {
+        gap: 12px;
+    }
+    .your-job-title,
+    .metrics-title {
+        font-size: 20px;
+    }
+    .your-job-option {
+        display: none;
+    }
+    .data-switch-container,
+    .metrics-switch-container {
+        display: block;
+    }
+    .metrics-percent {
+        font-size: 12px;
+    }
+    .metrics-option-container {
+        display: none;
+    }
+}
+
+
+

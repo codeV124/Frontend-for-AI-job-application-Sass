@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="../../css/home.css">    
+    <link rel="stylesheet" href="../../css/data.css">    
     <link rel="stylesheet" href="../../css/satoshi.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
@@ -19,9 +19,9 @@
                 </div>
                 <div class="menu-items">
                     <div class="home">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.25 15.9495C6.25 14.2523 6.25 13.4037 6.59308 12.6578C6.93615 11.9119 7.58046 11.3596 8.86906 10.2551L10.1191 9.18364C12.4482 7.18723 13.6128 6.18903 15 6.18903C16.3872 6.18903 17.5518 7.18723 19.8809 9.18364L21.1309 10.2551C22.4195 11.3596 23.0638 11.9119 23.4069 12.6578C23.75 13.4037 23.75 14.2523 23.75 15.9495V21.25C23.75 23.607 23.75 24.7855 23.0178 25.5178C22.2855 26.25 21.107 26.25 18.75 26.25H11.25C8.89298 26.25 7.71447 26.25 6.98223 25.5178C6.25 24.7855 6.25 23.607 6.25 21.25V15.9495Z" stroke="#131313" stroke-width="2.5"/>
-                            <path d="M18.125 26.25V20C18.125 19.3096 17.5654 18.75 16.875 18.75H13.125C12.4346 18.75 11.875 19.3096 11.875 20V26.25" stroke="#131313" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="30" height="30" viewBox="0 0 30 30" stroke="#838383" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 15.9495C6.25 14.2523 6.25 13.4037 6.59308 12.6578C6.93615 11.9119 7.58046 11.3596 8.86906 10.2551L10.1191 9.18364C12.4482 7.18723 13.6128 6.18903 15 6.18903C16.3872 6.18903 17.5518 7.18723 19.8809 9.18364L21.1309 10.2551C22.4195 11.3596 23.0638 11.9119 23.4069 12.6578C23.75 13.4037 23.75 14.2523 23.75 15.9495V21.25C23.75 23.607 23.75 24.7855 23.0178 25.5178C22.2855 26.25 21.107 26.25 18.75 26.25H11.25C8.89298 26.25 7.71447 26.25 6.98223 25.5178C6.25 24.7855 6.25 23.607 6.25 21.25V15.9495Z" stroke-width="2.5"/>
+                            <path d="M18.125 26.25V20C18.125 19.3096 17.5654 18.75 16.875 18.75H13.125C12.4346 18.75 11.875 19.3096 11.875 20V26.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div>Home</div>
                     </div>
@@ -35,7 +35,7 @@
                         <div>Jobs</div>
                     </div>
                     <div class="data">
-                        <svg width="30" height="30" viewBox="0 0 30 30" stroke="#838383" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="30" height="30" viewBox="0 0 30 30" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 12.5L10 20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M15 15V20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M20 10V20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -72,27 +72,41 @@
                 </div>
                 <img width="42px" height="42px" src="../../images/avatar-mobile-header.svg" alt="logo">
             </div>
-
             <div class="hello">
-                <div class="hello-title">Hello, Reid</div>
-                <div class="hello-text">Apply and track your jobs here!</div>
+                <div class="hello-title">Application Metrics</div>
+                <div class="hello-text">Track your progress here!</div>
+            </div>
+            <div class="your-job-header">
+                <div class="your-job-title">Your Job Data</div>
+                <div class="your-job-option">
+                    <div>Today</div>
+                    <img width="12px" height="10px" src="../../images/arrow-down-small.svg" alt="arrow-down">
+                </div>
             </div>
 
             <!--For Responsive-->
-            <div class="mobile-user">
-                <div style="display: flex; gap: 8px; align-items: center; padding: 12px 15px; background-color: black; border-radius: 15px;">
-                    <img width="30px" height="30px" src="../../images/user-avatar1.png" alt="user">
-                    <div style="font-size: 14px; color: white;">Senior Developer</div>
-                </div>
-                <div style="display: flex; gap: 8px; align-items: center; padding: 12px 15px; border: black 1px solid; border-radius: 15px;">
-                    <img width="30px" height="30px" src="../../images/user-avatar2.png" alt="user">
-                    <div style="font-size: 14px; color: black;">Junior Developer</div>
+            <div class="data-switch-container" style="margin: auto;">
+                <div class="data-switch">
+                    <div id="data-daily-mobile" class="switch-data">Daily</div>
+                    <div id="data-weekly-mobile" class="switch-data selected">Weekly</div>
+                    <div id="data-monthly-mobile" class="switch-data">Monthly</div>
                 </div>
             </div>
-
             <div class="status">
-                <hr>
                 <div class="status-container">
+                    <div class="status-item">
+                        <img width="55px" height="55px" src="../../images/offer-icon.svg" alt="apply">
+                        <div class="status-content">
+                            <div class="status-title">Database Jobs</div>
+                            <div class="status-info">
+                                <div>5142</div>
+                                <div style="display: flex; gap: 4px; align-items: center; font-size: 14px; font-weight: 500; color: #5F92B8;">
+                                    <img width="12px" height="8px" src="../../images/arrow-up-blue.svg" alt="arrow">
+                                    <div>30%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="status-item">
                         <img width="55px" height="55px" src="../../images/applied-icon.svg" alt="apply">
                         <div class="status-content">
@@ -106,7 +120,6 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
                     <div class="status-item">
                         <img width="55px" height="55px" src="../../images/interview-icon.svg" alt="apply">
                         <div class="status-content">
@@ -120,345 +133,132 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="status-item">
-                        <img width="55px" height="55px" src="../../images/offer-icon.svg" alt="apply">
-                        <div class="status-content">
-                            <div class="status-title">Offers</div>
-                            <div class="status-info">
-                                <div>2</div>
-                                <div style="display: flex; gap: 4px; align-items: center; font-size: 14px; font-weight: 500; color: #5F92B8;">
-                                    <img width="12px" height="8px" src="../../images/arrow-up-blue.svg" alt="arrow">
-                                    <div>1 pending</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <hr>
             </div>
-            <div class="top-jobs">
-                <div class="top-jobs-header">
-                    <div class="top-jobs-title-container">
-                        <div class="top-jobs-title">Top Jobs For You</div>
-                        <hr>
-                        <div class="new-jobs">40+ New</div>
+            <div class="job-data-chart-container">
+                <div class="job-data-chart-card">
+                    <div class="job-data-chart-header">
+                        <div class="job-data-chart-title">
+                            <img width="40px" height="40px" src="../../images/applied-jobs-icon.png" alt="applied-icon">
+                            Applied Jobs
+                        </div>
+                        54
                     </div>
-                    <div class="freshness">
-                        <div class="grey-text-2">Job Freshness</div>
+                    <div class="job-data-chart-text">Average jobs applied to on a daily basis this week.</div>
+                    <canvas id="job-data-chart"></canvas>
+                </div>
+                <div class="job-data-chart-card">
+                    <div class="job-data-chart-header">
+                        <div class="job-data-chart-title">
+                            <img width="40px" height="40px" src="../../images/applied-jobs-icon.png" alt="applied-icon">
+                            Applied Jobs
+                        </div>
+                        54
+                    </div>
+                    <div class="job-data-chart-text">Average jobs applied to on a daily basis this week.</div>
+                    <canvas id="job-data-chart2"></canvas>
+                </div>
+            </div>
+            <div class="metrics">
+                <div class="metrics-header">
+                    <div class="metrics-title-container">
+                        <div class="metrics-title">Metrics on Applied</div>
                         <hr>
-                        <div class="freshness-option">
-                            <div>Today</div>
+                        <div class="metrics-percent">- 30%</div>
+                    </div>
+                    <div class="metrics-option-container">
+                        <div class="metrics-category-container">
+                            <div id="metrics-not-applied" class="metrics-category">Not Applied</div>
+                            <div id="metrics-applied" class="metrics-category selected">Applied</div>
+                            <div id="metrics-interview" class="metrics-category">Interviews</div>
+                        </div>
+                        <hr>
+                        <div class="metrics-option">
+                            <div>Week</div>
                             <img width="12px" height="10px" src="../../images/arrow-down-small.svg" alt="arrow-down">
                         </div>
                     </div>
+                    <img width="24px" height="24px" src="../../images/regroup-icon.png" alt="regroup">
                 </div>
-                <div class="jobs-container">
-                    <!--Jobs(Mobile)-->
-                    <div class="job-fresh-container">
-                        <div class="job-fresh">
-                            <div id="job-fresh-daily-mobile" class="switch-job">Daily</div>
-                            <div id="job-fresh-weekly-mobile" class="switch-job selected">Weekly</div>
-                            <div id="job-fresh-monthly-mobile" class="switch-job">Monthly</div>
-                        </div>
-                        <div style="font-size: 14px; color: #636363; text-align: center; margin-top: 8px;">Job Freshness</div>
-                    </div>
-                    <div class="jobs-mobile">
-                        <div class="job-card">
-                            <div class="job-card-details">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">99</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-company">
-                                        <img width="17px" height="17px" src="../../images/google-icon.png" alt="company-logo">
-                                        Google
-                                    </div>
-                                    <div class="job-card-title">Product Designer</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-btn">See more</div>
-                        </div>
-                        <div class="job-card">
-                            <div class="job-card-details">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">99</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-company">
-                                        <img width="17px" height="17px" src="../../images/google-icon.png" alt="company-logo">
-                                        Google
-                                    </div>
-                                    <div class="job-card-title">Product Designer</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-btn">See more</div>
-                        </div>
-                        <div class="job-card">
-                            <div class="job-card-details">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">99</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-company">
-                                        <img width="17px" height="17px" src="../../images/google-icon.png" alt="company-logo">
-                                        Google
-                                    </div>
-                                    <div class="job-card-title">Product Designer</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-btn">See more</div>
-                        </div>
-                        <div class="job-card">
-                            <div class="job-card-details">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">99</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-company">
-                                        <img width="17px" height="17px" src="../../images/google-icon.png" alt="company-logo">
-                                        Google
-                                    </div>
-                                    <div class="job-card-title">Product Designer</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-btn">See more</div>
-                        </div>
-                    </div>
 
-                    <!--Jobs(Desktop)-->
-                    <div class="job">
-                        <div class="job-details">
-                            <div class="job-id">99</div>
-                            <div class="company">
-                                <img width="30px" height="30px" src="../../images/social.png" alt="company-logo">
-                                Google
-                            </div>
-                            <div class="job-title">
-                                Product Designer
-                            </div>
-                            <div class="job-salary">$120k - $200k</div>
-                            <div class="job-timeline">
-                                <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock">
-                                5h
-                            </div>
-                        </div>
-                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
-                    </div>
-                    <div class="job">
-                        <div class="job-details">
-                            <div class="job-id">99</div>
-                            <div class="company">
-                                <img width="30px" height="30px" src="../../images/social.png" alt="company-logo">
-                                Google
-                            </div>
-                            <div class="job-title">
-                                Product Designer
-                            </div>
-                            <div class="job-salary">$120k - $200k</div>
-                            <div class="job-timeline">
-                                <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock">
-                                5h
-                            </div>
-                        </div>
-                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
-                    </div>
-                    <div class="job">
-                        <div class="job-details">
-                            <div class="job-id">99</div>
-                            <div class="company">
-                                <img width="30px" height="30px" src="../../images/social.png" alt="company-logo">
-                                Google
-                            </div>
-                            <div class="job-title">
-                                Product Designer
-                            </div>
-                            <div class="job-salary">$120k - $200k</div>
-                            <div class="job-timeline">
-                                <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock">
-                                5h
-                            </div>
-                        </div>
-                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
-                    </div>
-                    <div class="job">
-                        <div class="job-details">
-                            <div class="job-id">99</div>
-                            <div class="company">
-                                <img width="30px" height="30px" src="../../images/social.png" alt="company-logo">
-                                Google
-                            </div>
-                            <div class="job-title">
-                                Product Designer
-                            </div>
-                            <div class="job-salary">$120k - $200k</div>
-                            <div class="job-timeline">
-                                <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock">
-                                5h
-                            </div>
-                        </div>
-                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
-                    </div>
-                </div>
-            </div>
-            <div class="performance">
-                <div class="performance-header">
-                    <div class="performance-title-container">
-                        <div class="performance-title">Performance</div>
-                        <hr>
-                        <div class="performance-percent">- 30%</div>
-                    </div>
-                    <div class="performance-option">
-                        <div>Week</div>
-                        <img width="12px" height="10px" src="../../images/arrow-down-small.svg" alt="arrow-down">
+                <div class="metrics-switch-container">
+                    <div class="metrics-switch">
+                        <div id="metrics-daily-mobile" class="switch-metrics">Daily</div>
+                        <div id="metrics-weekly-mobile" class="switch-metrics selected">Weekly</div>
+                        <div id="metrics-monthly-mobile" class="switch-metrics">Monthly</div>
                     </div>
                 </div>
 
-                <div class="performance-switch-container">
-                    <div class="performance-switch">
-                        <div id="performance-daily-mobile" class="switch-performance">Daily</div>
-                        <div id="performance-weekly-mobile" class="switch-performance selected">Weekly</div>
-                        <div id="performance-monthly-mobile" class="switch-performance">Monthly</div>
-                    </div>
-                </div>
-
-                <canvas id="performanceChart"></canvas>
-            </div>
-        </div>
-        <div class="user">
-            <div class="user-form-1">
-                <div class="user-info-1">
-                    <img width="55px" height="55px" src="../../images/user-avatar1.png" alt="user">
-                    <div>
-                        <div class="user-title-1">Senior Developer</div>
-                        <div class="user-name-1">Reid Thomas</div>
-                    </div>
-                </div>
-                <div style="font-size: 14px; color: white;">
-                    <div style="margin-top: 20px; margin-bottom: 12px;">Looing for roles in:</div>
-                    <div class="user-role-container">
-                        <div class="user-role">
-                            product designer
-                            <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
-                        </div>
-                        <div class="user-role">
-                            graphic design
-                            <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
-                        </div>
-                        <div class="user-role">
-                            ui/ux
-                            <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
-                        </div>
-                        <div>+5 more</div>
-                    </div>
-                </div>                
-            </div>
-            <div class="user-form-2">
-                <div class="user-info-2">
-                    <img width="55px" height="55px" src="../../images/user-avatar2.png" alt="user">
-                    <div>
-                        <div class="user-title-2">Junior Developer</div>
-                        <div class="user-name-2">Reid Thomas</div>
-                    </div>
-                </div>
-            </div>
-            <div style="display: flex; justify-content: center;">
-                <img id="addProfile" width="24px" height="24px" src="../../images/add-icon.png" alt="add">
-            </div>
-            <div class="filter">
-                <div style="display: flex; justify-content: space-between; font-size: 16px; align-items: center; margin-bottom: 30px;">
-                    Filters
-                    <img width="25px" height="25px" src="../../images/eidt-icon.png" alt="edit">
-                </div>
-                <div class="filter-form">
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="grey-text-2">Location</div>
-                        <input id="location" type="text" placeholder="Los Angeles, CA" name="location" required>
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="grey-text-2">Salary Range</div>
-                        <div style="display: flex; align-items: center;">
-                            <input id="salary-range-from" type="text" placeholder="$120k" name="salary-range-from" required>
-                            <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
-                            <input id="salary-range-to" type="text" placeholder="$150k" name="salary-range-to" required>
-                        </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="grey-text-2">Lorem ipsum</div>
-                        <input id="location" type="text" placeholder="Lorem ipsum" name="location" required>
-                    </div>
-                </div>
+                <canvas id="metricsChart"></canvas>
             </div>
         </div>
     </div>
 
-    <!--Profile Modal-->
-    <div id="profileModal" class="profile-modal">
-        <div class="modal-container">
-            <div style="display: flex; flex-direction: column; gap: 20px; padding-inline: 30px;">
-                <div class="profile-title">Profile</div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">First Name</div>
-                    <input id="first-name" type="text" placeholder="Jane" name="first-name" required>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Last Name</div>
-                    <input id="last-name" type="text" placeholder="Doe" name="last-name" required>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Profile Name</div>
-                    <input id="profile-name" type="text" placeholder="Profile Name" name="profile-name" required>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Email</div>
-                    <input id="email" type="text" placeholder="janedoe@gmail.com" name="email" required>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Phone Number</div>
-                    <input id="phone" type="text" placeholder="123-456-789" name="phone" required>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Location</div>
-                    <input id="location" type="text" placeholder="Los Angeles, CA" name="location" required>
-                </div>
-            </div>
-            <hr style="width: 100%; border: none; border-top: #d8d8d8 1px solid; margin-top: 20px; margin-bottom: 30px;">
-            <div style="display: flex; justify-content: end; padding-inline: 30px;">
-                <div style="display: flex; gap: 12px;">
-                    <div id="cancel">Cancel</div>
-                    <div id="confirm">Save</div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
-        // Performance Chart
+        // Job Data Chart
+        const jobData_xValues = ["Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun"];
+        const jobData_yValues = [2, 1, 2.1, 1.6, 0.5, 1.3, 2];
+        const barColors = ["#ABB9C1","#ABB9C1","#ABB9C1","#ABB9C1","#ABB9C1","#ABB9C1","#5F92B8"];
+
+        new Chart("job-data-chart", {
+        type: "bar",
+        data: {
+            labels: jobData_xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: jobData_yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display:false
+                    },
+                    ticks: {display:false}
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display:false
+                    },
+                    ticks: {display:false}
+                }]
+            }            
+        }
+        });
+
+        new Chart("job-data-chart2", {
+        type: "bar",
+        data: {
+            labels: jobData_xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: jobData_yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display:false
+                    },
+                    ticks: {display:false}
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display:false
+                    },
+                    ticks: {display:false}
+                }]
+            }            
+        }
+        });
+
+        // Metrics Chart
         const xValues = ["01","02","03","04","05","06","07"];
-        new Chart("performanceChart", 
+        new Chart("metricsChart", 
         {
           type: "line",
           data: {
@@ -503,7 +303,7 @@
         });
 
         // Job Fresh Mobile
-        const switchesJobs = document.querySelectorAll('.switch-job');
+        const switchesJobs = document.querySelectorAll('.switch-data');
         switchesJobs.forEach(switchBtn => {
             switchBtn.addEventListener('click', () => {
                 // Remove 'selected' class from all buttons
@@ -512,10 +312,10 @@
                 switchBtn.classList.add('selected');
             });
         });
-        document.getElementById('job-fresh-weekly-mobile').click();
+        document.getElementById('data-weekly-mobile').click();
 
         // Performance Fresh Mobile
-        const switchesPerformance = document.querySelectorAll('.switch-performance');
+        const switchesPerformance = document.querySelectorAll('.switch-metrics');
         switchesPerformance.forEach(switchBtn => {
             switchBtn.addEventListener('click', () => {
                 // Remove 'selected' class from all buttons
@@ -524,27 +324,7 @@
                 switchBtn.classList.add('selected');
             });
         });
-        document.getElementById('performance-weekly-mobile').click();
-
-        // Profile Modal
-        var profileModal = document.getElementById("profileModal");
-        var addProfile = document.getElementById("addProfile");
-        var cancel = document.getElementById("cancel");
-        var confirm = document.getElementById("confirm");
-        addProfile.onclick = function() {
-        profileModal.style.display = "flex";
-        }
-        cancel.onclick = function() {
-        profileModal.style.display = "none";
-        }
-        confirm.onclick = function() {
-        profileModal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == profileModal) {
-                profileModal.style.display = "none";
-            }
-        }
+        document.getElementById('metrics-weekly-mobile').click();
     </script>
         
 </body>

@@ -40,7 +40,7 @@ body {
     cursor: pointer;
 }
 
-.home {
+.jobs {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -48,7 +48,7 @@ body {
     color: black;
 }
 
-.jobs, .data, .settings {
+.home, .data, .settings {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -56,10 +56,15 @@ body {
     color: #838383;
 }
 
+.home:hover,
 .jobs:hover, 
 .data:hover, 
 .settings:hover {
     color: black;
+}
+
+.home:hover svg {
+    stroke: black;
 }
 
 .jobs:hover svg {
@@ -135,55 +140,9 @@ body {
     color: #636363;
 }
 
-.mobile-user {
-    display: none;
-}
-
-.status-container {
-    box-sizing: border-box;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding-block: 30px;
-}
-
-.status-item {
-    width: 33%;
-    display: flex;
-    gap: 12px;
-}
-
-.status-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.status-title {
-    font-size: 16px;
-    color: black;
-}
-
-.status-info {
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.status hr {
-    border: none;
-    border-top: #d8d8d8 1px solid;
-    margin: 0;
-}
-
-.status-container hr {
-    width: 0;
-    height: 100%;
-    border: none;
-    border-left: #d8d8d8 1px solid;
+.grey-text-14 {
+    font-size: 14px;
+    color: #636363;
 }
 
 .top-jobs,
@@ -197,6 +156,10 @@ body {
 .performance-header {
     display: flex;
     justify-content: space-between;
+}
+
+.filter-icon {
+    display: none;
 }
 
 .top-jobs-title-container,
@@ -286,9 +249,10 @@ body {
 }
 
 .jobs-mobile {
-    display: none;
-    gap: 20px;
-    overflow-x: scroll;    
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .jobs-mobile::-webkit-scrollbar {
@@ -296,7 +260,7 @@ body {
 }
 
 .job-card {
-    min-width: 240px;
+    min-width: 48%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -309,7 +273,7 @@ body {
 .job-card-details {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 25px;
     padding: 15px;
     border: none;
     border-radius: 15px;
@@ -350,7 +314,7 @@ body {
     color: black;
 }
 
-.job-card-salary,
+.job-card-role,
 .job-card-working-type {
     width: fit-content;
     font-size: 14px;
@@ -360,45 +324,51 @@ body {
     padding: 10px;
 }
 
-.job-card-btn {
-    background-color: black;
+.job-card-apply {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-card-salary {
     font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.job-card-location {
+    font-size: 14px;
+    color: #2D5A74;
+}
+
+.job-card-btn {
+    width: fit-content;
+    height: auto;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 600;
     color: white;
     border: none;
     border-radius: 15px;
     text-align: center;
-    padding-block: 10px;
+    padding: 10px 32px;
 }
 
-.job {
+.job-card-download {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
-    color: black;
+}
+
+.resume,
+.cover-letter {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
-}
-
-.job-details {
-    display: flex;
-    gap: 42px;
-    align-items: center;
-}
-
-.job-id {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.company {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-.job-timeline {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+    color: #5F92B8;
+    padding: 10px;
 }
 
 .performance-percent {
@@ -490,7 +460,7 @@ body {
 input[type=text] {
     background-color: #f5f5f5;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     border: #d8d8d8 1px solid;
     border-radius: 15px;
     padding: 10px 12px;
@@ -502,7 +472,8 @@ input[type=text] {
     cursor: pointer;
 }
 
-.profile-modal {
+.profile-modal,
+.jobs-filter-modal {
     display: none;
     justify-content: center;
     align-items: center;
@@ -521,17 +492,131 @@ input[type=text] {
     width: 400px;
     border: none;
     border-radius: 20px;
+    position: relative;
+}
+
+.profile-modal .modal-container {
     padding-block: 30px;
 }
 
-.profile-title {
+.job-filter-modal-details {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px; 
+    box-sizing: border-box; 
+    border-bottom: #d8d8d8 2px solid;
+    height: 600px; 
+    overflow-y: scroll; 
+}
+
+.job-filter-modal-details::-webkit-scrollbar {
+    display: none;
+}
+
+.jobs-filter-modal .modal-container {
+    height: 700px;
+}
+
+.filter-modal-footer {
+    background-color: #f5f5f5; 
+    display: flex; 
+    justify-content: end; 
+    position: absolute; 
+    bottom: 0; 
+    right: 30px; 
+    height: 98px;
+}
+
+.profile-title,
+.filter-title {
     font-size: 22px;
     font-family: Satoshi-Regular;
     font-weight: bold;
     text-align: center;
 }
 
-.modal-container #cancel {
+.keyword {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #d8d8d8;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    color: #636363;
+}
+
+/* The checkbox container */
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 21px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #636363;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: #d8d8d8 2px solid;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 9px;
+    height: 9px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5F92B8;
+}
+
+.modal-container #cancel,
+.modal-container #cancel-filter {
+    height: fit-content;
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
@@ -541,7 +626,9 @@ input[type=text] {
     cursor: pointer;
 }
 
-.modal-container #confirm {
+.modal-container #confirm,
+.modal-container #confirm-filter {
+    height: fit-content;
     background-color: black;
     padding: 10px 15px;
     font-size: 18px;
@@ -609,47 +696,12 @@ input[type=text] {
     .hello-text {
         display: none;
     }
-    .mobile-user {
-        display: flex;
-        gap: 8px;
-        justify-content: space-between;
-    }
-    .status hr {
-        display: none;
-    }
-    .status-container {
-        padding: 0;
-    }
-    .status-container hr {
-        display: none;
-    }
-    .status-container .status-item:last-child {
-        display: none;
-    }
-    .status-item {
-        box-sizing: border-box;
-        width: 50%;
-        padding: 20px;
-        border: #d8d8d8 1px solid;
-        border-radius: 15px;
-    }
-    .status-item > img {
-        display: none;
-    }
-    .status-content {
-        gap: 8px;
-    }
-    .status-title {
-        font-size: 14px;
-        font-weight: 500;
-        color: #636363;
-    }
-    .status-info {
-        font-size: 18px;
-    }
     .top-jobs,
     .performance {
         gap: 25px;
+    }
+    .filter-icon {
+        display: block;
     }
     .top-jobs-title-container,
     .performance-title-container {
@@ -668,14 +720,18 @@ input[type=text] {
     .jobs-container .job {
         display: none;
     }
+    .jobs-mobile {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .job-card {
+        min-width: 100%;
+    }
     .job-fresh-container,
     .performance-switch-container {
         display: block;
     }
-    .job-fresh{
-        display: flex;
-    }
-    .jobs-mobile {
+    .job-fresh {
         display: flex;
     }
     .performance-percent {

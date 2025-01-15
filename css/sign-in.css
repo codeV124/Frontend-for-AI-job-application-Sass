@@ -129,11 +129,17 @@ button[type=submit] {
     border-radius: 10px;
     display: inline-block;
     transition: background-color 0.6s ease;
+    cursor: pointer;
 }
 
 .active {
     background-color: #717171;
     width: 40px !important;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @media only screen and (max-width: 600px) {

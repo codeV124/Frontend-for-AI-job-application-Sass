@@ -103,9 +103,9 @@ body {
 }
 
 .main {
-    width: 75%;
     box-sizing: border-box;
     margin-left: 320px;
+    width: 75%;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -610,8 +610,8 @@ input[type=text] {
     }
     .mobile-user {
         display: flex;
-        gap: 8px;
-        justify-content: space-between;
+        gap: 12px;
+        justify-content: center;
     }
     .status hr {
         display: none;

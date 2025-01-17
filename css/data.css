@@ -429,6 +429,7 @@ body {
     }
     .metrics {
         gap: 25px;
+        margin-bottom: 100px;
     }
     .metrics-header img {
         display: block;

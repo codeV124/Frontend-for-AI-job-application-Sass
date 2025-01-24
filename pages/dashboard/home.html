@@ -86,14 +86,52 @@
                 </div>
     
                 <!--For Responsive-->
-                <div class="mobile-user">
-                    <div style="display: flex; gap: 8px; align-items: center; padding: 12px 15px; background-color: black; border-radius: 15px;">
-                        <img width="30px" height="30px" src="../../images/user-avatar1.png" alt="user">
-                        <div style="font-size: 14px; color: white;">Senior Developer</div>
+                <div class="profile-dropdown" id="profile-dropdown">
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; border: #D8D8D8 1px solid; border-radius: 15px; cursor: pointer;">
+                        <div style="display: flex; gap: 8px; align-items: center;">
+                            <img width="30px" height="30px" src="../../images/user-avatar2.png" alt="user">
+                            <div>
+                                <div style="font-size: 14px; color: black; margin-bottom: 2px;">Current Profile</div>
+                                <div style="font-size: 12px; color: #636363;">Junior Engineer</div>
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <img width="17px" height="17px" src="../../images/dropdown-arrow.png" alt="arrow">
+                        </div>
                     </div>
-                    <div style="display: flex; gap: 8px; align-items: center; padding: 12px 15px; border: black 1px solid; border-radius: 15px;">
-                        <img width="30px" height="30px" src="../../images/user-avatar2.png" alt="user">
-                        <div style="font-size: 14px; color: black;">Junior Developer</div>
+                    <div class="dropdown-content">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; border-bottom: #D8D8D8 1px solid;">
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <img width="30px" height="30px" src="../../images/user-avatar2.png" alt="user">
+                                <div>
+                                    <div style="font-size: 14px; color: black; margin-bottom: 2px;">Senior Developer</div>
+                                    <div style="font-size: 12px; color: #636363;">product designer, graphic design</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <img style="cursor: pointer;" width="17px" height="17px" src="../../images/Edit.png" alt="edit">
+                                <img style="cursor: pointer;" width="17px" height="17px" src="../../images/Trash.png" alt="delete">
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; border-bottom: #D8D8D8 1px solid;">
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <img width="30px" height="30px" src="../../images/user-avatar2.png" alt="user">
+                                <div>
+                                    <div style="font-size: 14px; color: black; margin-bottom: 2px;">Senior Developer</div>
+                                    <div style="font-size: 12px; color: #636363;">product designer, graphic design</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <img style="cursor: pointer;" width="17px" height="17px" src="../../images/Edit.png" alt="edit">
+                                <img style="cursor: pointer;" width="17px" height="17px" src="../../images/Trash.png" alt="delete">
+                            </div>
+                        </div>
+                        <div id="addProfileMobile" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 15px;">
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <img width="20px" height="20px" src="../../images/profile_add.png" alt="add">
+                                <div style="font-size: 14px; color: #636363;">Create a New Profile</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
     
@@ -330,6 +368,88 @@
                             </div>
                             <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
                         </div>
+
+                        <div class="job-table">
+                            <table style="overflow-x: auto;">
+                                <col style="width: 8%;"/>    
+                                <col style="width: 20%;"/>    
+                                <col style="width: 30%;"/>    
+                                <col style="width: 22%;"/>    
+                                <col style="width: 15%;"/>    
+                                <col style="width: 5%;"/>    
+                                <tr>
+                                    <td class="job-id">99</td>
+                                    <td>
+                                        <div class="company">
+                                            <img style="margin-right: 8px;" width="30px" height="30px" src="../../images/social.png" alt="company-logo">
+                                            Google
+                                        </div>
+                                    </td>
+                                    <td><div>Product</div></td>
+                                    <td>$120k - $200k</td>
+                                    <td class="job-timeline">
+                                        <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock"> 5h
+                                    </td>
+                                    <td>
+                                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="job-id">99</td>
+                                    <td>
+                                        <div class="company">
+                                            <img style="margin-right: 8px;" width="30px" height="30px" src="../../images/social.png" alt="company-logo">
+                                            Google
+                                        </div>
+                                    </td>
+                                    <td><div>Product </div></td>
+                                    <td>$120k - $200k</td>
+                                    <td class="job-timeline">
+                                        <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock"> 5h
+                                    </td>
+                                    <td>
+                                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="job-id">99</td>
+                                    <td>
+                                        <div class="company">
+                                            <img style="margin-right: 8px;" width="30px" height="30px" src="../../images/social.png" alt="company-logo">
+                                            Google
+                                        </div>
+                                    </td>
+                                    <td><div>Product </div></td>
+                                    <td>$120k - $200k</td>
+                                    <td class="job-timeline">
+                                        <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock"> 5h
+                                    </td>
+                                    <td>
+                                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="job-id">99</td>
+                                    <td>
+                                        <div class="company">
+                                            <img style="margin-right: 8px;" width="30px" height="30px" src="../../images/social.png" alt="company-logo">
+                                            Google
+                                        </div>
+                                    </td>
+                                    <td><div>Product </div></td>
+                                    <td>$120k - $200k</td>
+                                    <td class="job-timeline">
+                                        <img width="19px" height="19px" src="../../images/clock-icon.png" alt="clock"> 5h
+                                    </td>
+                                    <td>
+                                        <img width="30px" height="30px" src="../../images/arrow-right.png" alt="arrow">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+
                     </div>
                 </div>
                 <div class="performance">
@@ -427,36 +547,75 @@
     <!--Profile Modal-->
     <div id="profileModal" class="profile-modal">
         <div class="modal-container">
-            <div style="display: flex; flex-direction: column; gap: 20px; padding-inline: 30px;">
+            <div class="profile-modal-details">
                 <div class="profile-title">Profile</div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">First Name</div>
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 80px;">
+                    <div class="grey-text-small">First Name</div>
                     <input id="first-name" type="text" placeholder="Jane" name="first-name" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Last Name</div>
+                    <div class="grey-text-small">Last Name</div>
                     <input id="last-name" type="text" placeholder="Doe" name="last-name" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Profile Name</div>
+                    <div class="grey-text-small">Profile Name</div>
                     <input id="profile-name" type="text" placeholder="Profile Name" name="profile-name" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Email</div>
+                    <div class="grey-text-small">Email</div>
                     <input id="email" type="text" placeholder="janedoe@gmail.com" name="email" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Phone Number</div>
+                    <div class="grey-text-small">Phone Number</div>
                     <input id="phone" type="text" placeholder="123-456-789" name="phone" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Location</div>
+                    <div class="grey-text-small">Location</div>
                     <input id="location" type="text" placeholder="Los Angeles, CA" name="location" required>
                 </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Current Job</div>
+                    <input id="company" type="text" placeholder="Company" name="company" required>
+                    <input id="job-title" type="text" placeholder="Job Title" name="title" required>
+                    <div style="display: flex; align-items: center;">
+                        <input id="job-start" type="text" placeholder="Start Date" name="salary-range-from-modal" required>
+                        <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
+                        <input id="job-end" type="text" placeholder="End Date" name="salary-range-to-modal" required>
+                    </div>
+                    <label class="grey-text-small" style="display: flex; align-items: center; gap: 4px;">
+                        <input type="checkbox" name="current-job"> This is my current job
+                    </label>
+                    <textarea id="job-description" placeholder="Describe your job" rows="5"></textarea>
+                    <div style="display: flex; align-items: center; justify-content: space-between;" class="grey-text-small">
+                        Add another experience
+                        <img width="20px" height="20px" style="cursor: pointer;" src="../../images/add-icon.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Education</div>
+                    <input id="school" type="text" placeholder="School" name="school" required>
+                    <input id="major" type="text" placeholder="Major" name="major" required>
+                    <div style="display: flex; align-items: center;">
+                        <input id="school-start" type="text" placeholder="Start Date" name="salary-range-from-modal" required>
+                        <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
+                        <input id="school-end" type="text" placeholder="End Date" name="salary-range-to-modal" required>
+                    </div>
+                    <label class="grey-text-small" style="display: flex; align-items: center; gap: 4px;">
+                        <input type="checkbox" name="current-education"> Curretly a Student
+                    </label>
+                    <div style="display: flex; align-items: center; justify-content: space-between;" class="grey-text-small">
+                        Add another experience
+                        <img width="20px" height="20px" style="cursor: pointer;" src="../../images/add-icon.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Awards and Certifications</div>
+                    <input id="award-name" type="text" placeholder="Name" name="award-name" required>
+                    <input id="award-date" type="text" placeholder="Date received" name="award-date" required>
+                </div>
             </div>
-            <hr style="width: 100%; border: none; border-top: #d8d8d8 1px solid; margin-top: 20px; margin-bottom: 30px;">
-            <div style="display: flex; justify-content: end; padding-inline: 30px;">
-                <div style="display: flex; gap: 12px;">
+            <div class="profile-modal-footer">
+                <div style="display: flex; gap: 12px; align-items: center;">
                     <div id="cancel">Cancel</div>
                     <div id="confirm">Save</div>
                 </div>
@@ -464,6 +623,12 @@
         </div>
     </div>
     <script>
+        //Profile Dropdown
+        const dropdown = document.getElementById('profile-dropdown');
+        dropdown.addEventListener('click', () => {
+            dropdown.classList.toggle('open');
+        });
+
         // Performance Chart
         const xValues = ["01","02","03","04","05","06","07"];
         new Chart("performanceChart", 
@@ -537,10 +702,14 @@
         // Profile Modal
         var profileModal = document.getElementById("profileModal");
         var addProfile = document.getElementById("addProfile");
+        var addProfileMobile = document.getElementById("addProfileMobile");
         var cancel = document.getElementById("cancel");
         var confirm = document.getElementById("confirm");
         addProfile.onclick = function() {
-        profileModal.style.display = "flex";
+            profileModal.style.display = "flex";
+        }
+        addProfileMobile.onclick = function() {
+            profileModal.style.display = "flex";
         }
         cancel.onclick = function() {
         profileModal.style.display = "none";
